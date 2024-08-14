@@ -1,4 +1,4 @@
-# @act/release-scripts
+# @bmjs/release-scripts
 
 This repo is used to share release & publish scripts for the org. Scripts should be executed from the workspace root via `tsx scripts/release.ts`
 fork from [release-scripts](https://github.com/vitejs/release-scripts)
@@ -6,7 +6,7 @@ fork from [release-scripts](https://github.com/vitejs/release-scripts)
 ## release
 
 ```ts
-import { release } from '@act/release-scripts'
+import { release } from '@bmjs/release-scripts'
 
 release({
   // Name of the repo for CI link
@@ -31,7 +31,7 @@ release({
 ## publish
 
 ```ts
-import { publish } from '@act/release-scripts'
+import { publish } from '@bmjs/release-scripts'
 
 publish({
   // Used when tag is not `pkg@version`
