@@ -19,11 +19,11 @@
     "url": "git+https://github.com/ywenhao/release-scripts.git"
   },
   "scripts": {
-    "build": "tnode scripts/build.ts",
+    "build": "tsx scripts/build.ts",
     "prettier": "pnpm prettier-ci --write",
     "prettier-ci": "prettier --cache --ignore-path=.gitignore --check '**/*.{ts,json,md,yml}'",
     "qa": "tsc && pnpm prettier-ci && pnpm build",
-    "release": "tnode scripts/release.ts"
+    "release": "tsx scripts/release.ts"
   },
   "dependencies": {
     "execa": "^8.0.1",
@@ -40,6 +40,7 @@
     "@types/semver": "^7.5.8",
     "esbuild": "^0.23.0",
     "prettier": "^3.3.3",
+    "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   },
   "packageManager": "pnpm@9.6.0"
