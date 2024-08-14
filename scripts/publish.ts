@@ -1,6 +1,6 @@
-import { publish } from "../src/publish.ts";
+import { publish } from '../src/publish.ts'
 
 publish({
-  defaultPackage: "release-scripts",
-  getPkgDir: () => ".",
-});
+  defaultPackage: 'release-scripts',
+  getPkgDir: () => '.',
+})
